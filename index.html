@@ -5,12 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5e9ebfc54c.js" crossorigin="anonymous"></script>
+
     <!-- Tailwind CSS CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style>
+        .fontb {
+            font-family: "Bebas Neue", serif;
+        }
+        .fontr {
+            font-family: "Roboto", serif;
+        }
+    </style>
+
 </head>
 <body>
-    <header>
+    <header class="bg-[#FFFBF0]">
+        <!-- Navbar 1 -->
+         <nav class="py-4 w-11/12 mx-auto flex justify-between items-center lg:hidden">
+            <div class="flex gap-2">
+                <img src="icons/Frame.png" alt="Penguin Fashion logo">
+                <h1 class="fotnb font-bold text-2xl text-gray-600">
+                    <span class="text-[#A4BC46]">Penguin</span> Fashion
+                </h1>
+            </div>
+            <div>
+                <img class="w-full" src="icons/menu-2-outline 1.png" alt="">
+            </div>
+         </nav>
 
+        <!-- Navbar 2 -->
+        <nav class="w-4/5 mx-auto py-8 hidden lg:flex justify-between items-center">
+            <div class="flex gap-2">
+                <img src="icons/Frame.png" alt="Penguin Fashion logo">
+                <h1 class="fotnb font-bold text-2xl text-gray-600">
+                    <span class="text-[#A4BC46]">Penguin</span> Fashion
+                </h1>
+            </div>
+            <div class="w-3/5 list-none flex justify-end gap-12 fontr text-sm xl:text-base font-medium">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Product</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </div>
+        </nav>
+        <!-- Nav area ends -->
+
+        <!-- Hero section starts -->
+         <section class="pt-4 w-11/12 lg:w-3/4 mx-auto">
+            <div class="w-11/12 ml-0 flex flex-col lg:flex-row justify-between gap-4">
+                <div class="flex flex-col justify-center space-y-4 items-start">
+                    <h1 class="fontb font-extrabold text-7xl text-gray-700 leading-[80px]">
+                        <span class="text-[#fabe4c]">Be the Penguins</span> <br class="hidden lg:block"> of Winter
+                    </h1>
+                    <p class="text-gray-800 text-base font-normal fontr">
+                        Lorem Ipsum is simply dummy text of the printing 
+                        and <br class="hidden lg:block"> typesetting industry.
+                    </p>
+                    <button class="bg-[#A4BC46] py-4 px-4 flex items-center justify-center gap-3 text-white fontr text-lg font-medium rounded-lg">
+                        <img class="w-2/12" src="icons/shopping-cart 1.png" alt="Cart Icon">
+                        Buy Now
+                    </button>
+                </div>
+                <div>
+                    <img src="images/model.png" alt="">
+                </div>
+            </div>
+         </section>
     </header>
 </body>
 </html>
